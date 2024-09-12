@@ -162,6 +162,9 @@ span .material-symbols-rounded {
     22% {
         transform: translateY(-7px);
     }
+    44% {
+        opacity: 0.2;
+    }
 
 }
 
@@ -173,7 +176,7 @@ span .material-symbols-rounded {
     display: flex;
     justify-content: center;
     background: var(--outgoing-chat-bg);
-    border: 1px solid var(--outgoing-chat-border);
+    border: 1px solid var(--incoming-chat-border);
 }
 
 .typing-container .typing-content {
@@ -183,13 +186,13 @@ span .material-symbols-rounded {
     align-items: flex-end;
 }
 
-.typing-content .typing-text {
+.typing-content .typing-textarea {
     width: 100%;
     display: flex;
     position: relative;
 }
 
-.typing-text textarea {
+.typing-textarea textarea {
     width: 100%;
     height: 55px;
     border: none;
@@ -204,15 +207,15 @@ span .material-symbols-rounded {
     outline: 1px solid var(--incoming-chat-border);
 }
 
-.typing-text textarea::placeholder {
+.typing-textarea textarea::placeholder {
     color: var(--placeholder-color);
 }
 
-.typing-text textarea:valid~span {
+.typing-textarea textarea:valid~span {
     visibility: visible;
 }
 
-.typing-text span {
+.typing-textarea span {
     position: absolute;
     right: 0;
     bottom: 0;

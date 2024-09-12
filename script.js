@@ -1,4 +1,4 @@
-const chatInput = document.getElementById("#typing");
+const chatInput = document.getElementById("#chat-input");
 const sendButton = document.getElementById("#send-btn");
 const chatContainer = document.getElementById(".chat-container");
 const themeButton = document.getElementById("#theme-btn");
